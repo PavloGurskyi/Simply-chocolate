@@ -126,7 +126,6 @@ address {
   color: #fff;
 }
 .benef-text {
-  font-weight: 400;
   font-size: 14px;
   letter-spacing: -0.02em;
   color: rgba(255, 255, 255, 0.7);
@@ -149,9 +148,7 @@ address {
   color: #111;
 }
 .ingred-text {
-  font-weight: 400;
   font-size: 14px;
-
   line-height: 1.29;
   letter-spacing: -0.02em;
   text-align: center;
@@ -206,7 +203,6 @@ address {
 /* .how-list {
 } */
 .how-text-item {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
@@ -238,7 +234,6 @@ address {
   color: #111;
 }
 .reviews-text {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
@@ -280,7 +275,6 @@ address {
 /* .footer-address-list {
 } */
 .footer-address-list-item {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
   text-align: center;
