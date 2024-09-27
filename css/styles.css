@@ -80,8 +80,7 @@ p {
   display: flex;
   column-gap: 24px;
 }
-.menu-item {
-}
+
 .menu-link {
   display: block;
   padding-top: 30px;
@@ -172,6 +171,7 @@ p {
 /* #endregion hero */
 
 /* #region benefits */
+
 .benefits {
   background-color: #1e1823;
   margin-bottom: 50px;
@@ -199,11 +199,11 @@ p {
 /* #endregion */
 
 /* #region ingredients */
+
 .color-part {
   color: #fd9222;
 }
-/* .ingredients {
-} */
+
 .ingred-title {
   font-weight: 600;
   font-size: 24px;
@@ -265,8 +265,7 @@ p {
 /* #endregion ingredients */
 
 /* #region how-made */
-/* .how-made {
-} */
+
 .how-sect-title {
   font-weight: 600;
   font-size: 24px;
@@ -275,15 +274,32 @@ p {
   text-transform: uppercase;
   text-align: center;
   color: #111;
+  margin-bottom: 50px;
+}
+.how-content {
+  display: flex;
+  gap: 20px;
+}
+.title-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  padding: 32px;
+  background-color: #fff;
+  border-radius: 15px;
 }
 .how-text-title {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
   color: #111;
+  max-width: 350px;
 }
-/* .how-list {
-} */
+.how-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
 .how-text-item {
   font-size: 14px;
   line-height: 1.29;
@@ -293,8 +309,11 @@ p {
 /* #endregion how-made */
 
 /* #region reviews*/
-/* .reviews {
-} */
+.reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .reviews-main-title {
   font-weight: 600;
   font-size: 24px;
@@ -303,16 +322,33 @@ p {
   text-transform: uppercase;
   text-align: center;
   color: #111;
+  margin-bottom: 50px;
 }
-/* .reviews-list {
+.reviews-list {
+  display: flex;
+  gap: 28px;
+  margin-bottom: 50px;
 }
 .reviews-item {
-} */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.rew-img-txt {
+  display: flex;
+  flex-direction: column;
+}
+.rew-img-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  gap: 18px;
+}
 .reviews-title {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
-  text-align: center;
   color: #111;
 }
 .reviews-text {
@@ -321,6 +357,15 @@ p {
   letter-spacing: -0.02em;
   text-align: center;
   color: rgba(17, 17, 17, 0.7);
+  padding: 104px 24px 24px 24px;
+  background-color: #fff;
+  box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
+  border-right: 15px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  max-width: 360px;
+  margin-top: -80px;
+  min-height: 200px;
 }
 .review-btn {
   font-weight: 600;
