@@ -27,12 +27,18 @@
   <body>
     <!-- #region header -->
     <header class="header">
-      <div class="container">
+      <div class="container page-header-container">
         <nav class="nav">
           <a class="logo" href="index.html"
-            ><span class="logo-span">SIMPLY</span> CHOCOLATE</a
-          >
+            ><span class="logo-span">SIMPLY</span>&nbsp;CHOCOLATE
+            <svg width="24" height="24" class="logo-icon">
+              <use href="./images/symbol-defs.svg#chocolate-logo"></use>
+            </svg>
+          </a>
           <ul class="menu">
+            <!-- <li class="menu-item">
+              <a class="menu-link sand" href="./sand.html">Sandbox</a>
+            </li> -->
             <li class="menu-item">
               <a class="menu-link" href="./index.html">Home</a>
             </li>
@@ -44,6 +50,22 @@
             </li>
           </ul>
         </nav>
+        <ul class="social-list">
+          <li class="social-list-item">
+            <a href="" class="social-lst-link">
+              <svg class="social-list-icon" width="24" height="24">
+                <use href="./images/symbol-defs.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list-item">
+            <a href="" class="social-lst-link">
+              <svg class="social-list-icon" width="24" height="24">
+                <use href="./images/symbol-defs.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </header>
     <!-- #endregion header -->
@@ -61,7 +83,12 @@
                 <button type="button" class="hero-btn">Buy now</button>
                 <a href="#how-made" class="hero-made-link">How it`s made</a>
               </div>
-              <a href="#footer" class="down-link">scroll down</a>
+              <div class="scroll-down">
+                <a href="#footer" class="down-link">scroll down</a>
+                <svg width="38" height="38">
+                  <use href="./images/symbol-defs.svg#scroll"></use>
+                </svg>
+              </div>
             </div>
           </div>
         </div>
@@ -127,6 +154,17 @@
                 height="160"
               />
               <h3 class="ingred-item-title">milk chocolate</h3>
+              <div class="ingred-overlay">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Expedita blanditiis magni molestias repellat nobis quam
+                exercitationem vitae atque illo dolores! Lorem ipsum dolor sit,
+                amet consectetur adipisicing elit. Earum at eum laboriosam
+                deserunt aliquid expedita impedit totam quas enim nemo nulla,
+                eaque in eveniet sint eius obcaecati repudiandae iusto minus
+                sequi cumque. Temporibus iusto nulla itaque sequi iure, vero
+                voluptatem architecto nobis mollitia a distinctio? Soluta,
+                laborum? Repellat, eaque sed?
+              </div>
             </li>
             <li class="ingred-item">
               <img
@@ -204,6 +242,7 @@
         </div>
       </section>
       <!-- #endregion how made -->
+
       <!-- #region reviews -->
       <section class="reviews container section-paddings" id="reviews">
         <h2 class="reviews-main-title">
