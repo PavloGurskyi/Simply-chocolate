@@ -173,37 +173,52 @@ p {
   padding: 14px 40px;
   /* width: 144px;
   height: 45px; */
+  border: 1px solid #fd9222;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-btn:hover,
 .hero-btn:focus {
   color: #fd9222;
   background-color: #fcf1e0;
+  border: 1px solid #fcf1e0;
 }
 .hero-made-link {
   font-weight: 600;
   font-size: 14px;
   color: #fff;
   border: 1px solid #fff;
-  border: 1px solid #fff;
   border-radius: 100px;
   padding: 14px 40px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-made-link:hover,
 .hero-made-link:focus {
   color: #fd9222;
-  background-color: #fff;
+  border-color: #fd9222;
 }
 .scroll-down {
   display: flex;
   gap: 14px;
   align-items: center;
 }
+.scroll-down-icon {
+  fill: #fd9222;
+  background-color: #fafafa;
+  border-radius: 50%;
+}
 .down-link {
+  display: flex;
+  align-items: center;
+  gap: 14px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.28;
   letter-spacing: -0.03em;
   color: #fff;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .down-link:hover,
 .down-link:focus {
@@ -217,25 +232,52 @@ p {
   background-color: #1e1823;
   margin-bottom: 50px;
 }
+.benefits-container {
+  padding: 0 34px;
+}
 .benefits-list {
   display: flex;
-  padding: 0 50px;
-  gap: 70px;
+  /* padding: 0 50px; */
+  column-gap: 88px;
 }
 .benef-item {
-  max-width: calc((100% - 140px) / 3);
+  max-width: calc((100% - 2 * 88px) / 3);
+  max-width: 308px;
+  position: relative;
+}
+.benefits-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 365px;
+  width: 62px;
+  height: 62px;
 }
 .benefits-title {
   font-weight: 600;
   font-size: 18px;
-  letter-spacing: 0.01em;
+  /* letter-spacing: 0.01em; */
   color: #fff;
   margin-bottom: 18px;
 }
 .benef-text {
   font-size: 14px;
+  line-height: 1.29;
   letter-spacing: -0.02em;
   color: rgba(255, 255, 255, 0.7);
+}
+.benef-item:not(:last-child)::after {
+  content: '';
+  width: 1px;
+  height: 50%;
+  top: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 50%;
+  right: -18px;
+  transform: translateY(-50%);
 }
 /* #endregion */
 
@@ -308,6 +350,7 @@ p {
   letter-spacing: -0.02em;
   text-transform: uppercase;
 }
+
 .ingred-overlay {
   position: absolute;
   width: 100%;
@@ -320,8 +363,52 @@ p {
   color: #111;
   transform: translateY(101%);
   transition: transform 500ms;
+  padding: 20px;
 }
+.card-title {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #111;
+  margin-bottom: 8px;
+}
+.card-list {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+.card-list-item {
+}
+.like-btn {
+  border-radius: 35px;
+  padding: 6px 16px;
+  background-color: #fd9222;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+  color: #fff;
+  border: 1px solid #fd9222;
+}
+.like-benefits {
+  border: 1px solid #fd9222;
+  border-radius: 35px;
+  padding: 6px 16px;
+  background-color: #fafafa;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+  color: #111;
+}
+.card-text {
+  font-weight: 400;
+  font-size: 14px;
 
+  /* line-height: 18px; */
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  color: #111;
+}
 /* #endregion ingredients */
 
 /* #region how-made */
@@ -373,6 +460,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 100px;
 }
 .reviews-main-title {
   font-weight: 600;
@@ -437,6 +525,13 @@ p {
   padding: 14px 40px;
   width: 222px;
   height: 50px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.review-btn:hover,
+.review-btn:focus {
+  color: #fff;
+  background-color: #fd9222;
 }
 /* #endregion reviews*/
 
@@ -464,11 +559,17 @@ p {
   line-height: 1.29;
   margin-bottom: 14px;
 }
-.footer-address-list {
-}
-.footer-address-list-item {
+/* .footer-address-list {
+} */
+.footer-address-list-link {
   font-size: 14px;
   line-height: 1.29;
+  letter-spacing: -0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-address-list-link:hover,
+.footer-address-list-link:focus {
+  color: #fd9222;
 }
 .footer-address-list-item:not(:last-child) {
   margin-bottom: 4px;
