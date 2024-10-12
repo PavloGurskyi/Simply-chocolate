@@ -46,14 +46,123 @@ p {
   overflow: hidden;
 }
 .container {
-  max-width: 320px;
-  padding-left: 15px;
-  padding-right: 15px;
+  /* max-width: 367px; */
+  padding-left: 16px;
+  padding-right: 16px;
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+  }
+}
+@media screen and (min-width: 1168px) {
+  .container {
+    max-width: 1168px;
+  }
+}
+
+.section-paddings {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.page-header-container {
+  display: flex;
+  align-items: center;
+  /* column-gap: 90px; */
+  padding: 20px 16px 14px 16px;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.11;
+  letter-spacing: -0.03em;
+  color: #111111;
+}
+.logo-span {
+  font-style: italic;
+}
+.logo-icon {
+  margin-left: 4px;
+}
+
+.header-menu,
+.social-list {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .header-menu,
+  .social-list {
+    display: flex;
+    align-items: baseline;
+    column-gap: 24px;
+  }
+}
+
+.burger-btn {
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+  padding: 0;
+}
+@media screen and (min-width: 768px) {
+  .burger-btn {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-link {
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .menu-link:hover,
+  .menu-link:focus {
+    color: #fd9222;
+  }
+  .social-list {
+    display: flex;
+    column-gap: 18px;
+  }
+  .social-lst-link {
+    display: block;
+    line-height: 0;
+    stroke: #111;
+    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .social-lst-link:hover,
+  .social-lst-link:focus {
+    stroke: #fd9222;
+  }
+
+  .social-list-icon {
+    fill: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-menu {
+    margin-right: 48px;
+  }
+}
+@media screen and (min-width: 1168px) {
+  .header-menu {
+    margin-right: 156px;
   }
 }
